@@ -1,0 +1,17 @@
+{
+  "name": "rabbit-mq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "node sales.js",
+    "worker": "node checkout.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.2",
+    "express": "^4.18.2"
+  }
+}

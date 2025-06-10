@@ -1,0 +1,23 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t dockernode -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true dockernode npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "FrontendDocker"
+  env: "Frontenddocker-env"
+  bucket_name: "elasticbeanstalk-us-west-2-561539087000"
+  bucket_path: "FrontendDocker"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "title": "updated",
+      "authorx": "tiago",
+      "updatedAt": "2023-01-10T12:28:21.047Z",
+      "id": 2
+    },
+    {
+      "title": "new-entry-created",
+      "authorx": "annonymous",
+      "createdAt": "2023-01-10T12:27:48.879Z",
+      "updatedAt": "2023-01-10T12:27:48.879Z",
+      "id": 3
+    },
+    {
+      "title": "new-entry-created",
+      "authorx": "annonymous",
+      "createdAt": "2023-01-26T20:26:24.916Z",
+      "updatedAt": "2023-01-26T20:26:24.916Z",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "body": "my comment",
+      "createdAt": "2023-01-26T20:29:29.841Z",
+      "updatedAt": "2023-01-26T20:29:29.841Z",
+      "postId": "2",
+      "id": 1
+    },
+    {
+      "body": "my comment x",
+      "createdAt": "2023-01-26T20:52:36.391Z",
+      "updatedAt": "2023-01-26T20:52:36.391Z",
+      "postId": "2",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
